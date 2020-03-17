@@ -5,12 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusamus iste distinctio amet id maxime, atque esse cum repellat, quaerat quas tempore at perferendis nihil eligendi beatae neque enim magnam.
+
+<body class="main">
+    <header class="hero">
+        <div class="hero__header">
+            <img class="hero__logo" src="./images/hero/logo.svg" alt="">
+            <ul class="social-links">
+                <li>
+                    <a class="social-links__item" href=""><img src="./images/social-icons/github.svg" alt=""></a>
+                </li>
+                <li>
+                    <a class="social-links__item" href=""><img src="./images/social-icons/twitter.svg" alt=""></a>
+                </li>
+                <li>
+                    <a class="social-links__item" href=""><img src="./images/social-icons/instagram.svg" alt=""></a>
+                </li>
+                <li>
+                    <a class="social-links__item" href=""><img src="./images/social-icons/facebook.svg" alt=""></a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="hero__content">
+            <div class="hero__text">
+                <h2 class="hero__profession">Фрилансер</h2>
+                <h1 class="hero__firstLastName">Петр Федоров</h1>
+                <p class="hero__paragraph">Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать дизайн и верстку небольшого сайта или интернет-магазина</p>
+                <a class="hero__button" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" href="#">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</a>
+            </div>
+            <img class="hero__avatar" src="./images/hero/avatar.jpg" alt="">
+        </div>
+    </header>
+    <div id="animatedModal" class="animated-modal">
+        <p class="animated-modal__paragraph">Можете просто оставить заявку, я позвоню вам сегодня в удобное время</p>
+        <form>
+            <input class="animated-modal__item" type="name" placeholder="Ваше имя">
+            <input class="animated-modal__item" type="tel" placeholder="Ваш телефон">
+            <input class="animated-modal__item" type="time" placeholder="Время">
+            <input type="submit" value="БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ">
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

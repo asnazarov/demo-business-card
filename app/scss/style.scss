@@ -1,12 +1,7 @@
-html {
-    // background-color: rgb(127, 224, 121);
-    padding: 0;
+@import "global";
+@import "vars";
+@import "header";
+.main {
+    background-color: $main-color;
     margin: 0;
-    font-size: 20px;
-}
-
-body {
-    background-color: rgb(169, 161, 214);
-    color: seagreen;
-    display: flex;
 }
