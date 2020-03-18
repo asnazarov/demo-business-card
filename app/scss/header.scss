@@ -11,6 +11,7 @@
         justify-content: space-between;
     }
     &__content {
+        width: 100%;
         // border: 1px solid green;
         max-width: 966px;
         margin: 120px auto 0;
@@ -19,7 +20,9 @@
         display: flex;
         justify-content: space-between;
     }
-    &__text {}
+    &__text {
+        color: #fff;
+    }
     &__profession {
         margin: 18px 0 0 0;
         font-family: "Roboto", sans-serif;
@@ -35,6 +38,7 @@
         font-weight: bold;
         font-size: 50px;
         line-height: 59px;
+        margin-right: 20px;
     }
     &__paragraph {
         max-width: 420px;
@@ -43,6 +47,7 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 28px;
+        margin-right: 15px;
     }
     &__button {
         text-align: center;
@@ -55,11 +60,13 @@
         font-family: "Roboto", sans-serif;
         font-weight: bold;
         font-size: 12px;
-        line-height: 28px;
+        line-height: 30px;
         width: 285px;
         max-width: 100%;
     }
     &__avatar {
+        height: 41%;
+        width: 41%;
         border-radius: 50%;
         border: 10px solid #fff;
     }
@@ -71,6 +78,12 @@
     &__item {
         padding-left: 20px;
     }
+}
+
+.social-links li:hover {
+    opacity: 0.5;
+    transition: .4s;
+    ;
 }
 
 #animatedModal {
@@ -94,9 +107,12 @@
     font-size: 12px;
     line-height: 28px;
     width: 100%;
+    min-height: 70px;
+    margin-top: 20px;
 }
 
 .animated-modal {
+    position: relative;
     &__paragraph {
         font-family: "Roboto", sans-serif;
         font-weight: bold;
@@ -104,21 +120,49 @@
         line-height: 28px;
         text-align: center;
         color: #000000;
-        margin-bottom: 32px;
+        margin-bottom: 40px;
+        position: relative;
     }
     &__item {
-        color: #949494;
+        color: #000;
         display: block;
         width: 100%;
-        margin-bottom: 20px;
+        min-height: 70px;
+        margin-bottom: 18px;
         outline: none;
         height: 40px;
         border: 1px solid #e6e6e6;
-        padding: 0 10px;
+        padding: 7px 20px;
         background-color: #f8f8f8;
         box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
         border-radius: 5px;
         font-family: "Roboto", sans-serif;
         font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        position: relative;
     }
+    input[type="name"]::placeholder {
+        background-image: url(../images/animatedModal/user-icon.svg);
+        background-position: 2px center;
+        background-repeat: no-repeat;
+    }
+    input[type="tel"]::placeholder {
+        background-image: url(../images/animatedModal/phone-icon.svg);
+        background-position: 2px center;
+        background-repeat: no-repeat;
+    }
+    input[type="text"]::placeholder {
+        background-image: url(../images/animatedModal/time-icon.svg);
+        background-position: 2px center;
+        background-repeat: no-repeat;
+    }
+}
+
+@include placeholder {
+    color: #949494;
+    font-family: "Roboto", sans-serif;
+    padding-left: 34px;
+    font-size: 14px;
+    line-height: 28px;
 }

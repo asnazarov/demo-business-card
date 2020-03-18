@@ -1,3 +1,17 @@
 $head-footer: #1B2944;
 $main-color: #141F35;
 $input: #FFBB01;
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
