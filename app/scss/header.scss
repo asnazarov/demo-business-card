@@ -4,9 +4,9 @@
     padding: 40px 0;
     &__header {
         // border: 1px solid green;
-        max-width: 966px;
+        max-width: 976px;
         margin: 0 auto;
-        padding: 0 15px;
+        padding: 0 20px;
         display: flex;
         justify-content: space-between;
     }
@@ -24,29 +24,22 @@
         color: #fff;
     }
     &__profession {
+        max-width: 60%;
+        word-wrap: break-word;
         margin: 18px 0 0 0;
-        font-family: "Roboto", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 1.5rem;
-        line-height: 1.17;
+        font: normal 1.5rem/1.17 "Roboto", sans-serif;
         color: #ffbb01;
     }
     &__firstLastName {
+        word-wrap: break-word;
         margin: 24px 0 20px 0;
-        font-family: "Roboto", sans-serif;
-        font-weight: bold;
-        font-size: 50px;
-        line-height: 59px;
+        font: bold 50px/59px "Roboto", sans-serif;
         margin-right: 20px;
     }
     &__paragraph {
         max-width: 420px;
         margin: 0 0 40px 0;
-        font-family: "Roboto", sans-serif;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 28px;
+        font: normal 16px/28px "Roboto", sans-serif;
         margin-right: 15px;
     }
     &__button {
@@ -57,10 +50,7 @@
         border-radius: 5px;
         border: none;
         padding: 15px 0 15px 0;
-        font-family: "Roboto", sans-serif;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 30px;
+        font: bold 12px/30px "Roboto", sans-serif;
         width: 285px;
         max-width: 100%;
     }
@@ -102,10 +92,7 @@
     border: none;
     cursor: pointer;
     padding: 15px 0 15px 0;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 28px;
+    font: bold 12px/28px "Roboto", sans-serif;
     width: 100%;
     min-height: 70px;
     margin-top: 20px;
@@ -114,10 +101,7 @@
 .animated-modal {
     position: relative;
     &__paragraph {
-        font-family: "Roboto", sans-serif;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 28px;
+        font: bold 18px/28px "Roboto", sans-serif;
         text-align: center;
         color: #000000;
         margin-bottom: 40px;
@@ -136,10 +120,7 @@
         background-color: #f8f8f8;
         box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
         border-radius: 5px;
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
+        font: normal 18px/28px "Roboto", sans-serif;
         position: relative;
     }
     input[type="name"]::placeholder {
@@ -161,8 +142,7 @@
 
 @include placeholder {
     color: #949494;
-    font-family: "Roboto", sans-serif;
-    padding-left: 34px;
-    font-size: 14px;
-    line-height: 28px;
+    font: normal 18px/28px "Roboto", sans-serif;
+    padding: 7px 34px;
+    // margin-left: 30px;
 }

@@ -1,0 +1,36 @@
+.features {
+    max-width: 976px;
+    margin: 0 auto;
+    padding: 64px 20px;
+    &__title {
+        max-width: 70%;
+        font: bold 36px/42px "Roboto", sans-serif;
+        color: #ffffff;
+        margin-bottom: 85px;
+    }
+    &__blocks {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 75px 56px;
+        @media screen and (max-width: 931px) {
+            padding: 0 15px;
+        }
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__subtitle {
+        max-width: 70%;
+        word-wrap: break-word;
+        font: bold 24px/28px "Roboto", sans-serif;
+        color: #fff;
+        margin-top: 7%;
+    }
+    &__text {
+        font: normal 16px/28px "Roboto", sans-serif;
+        color: #fff;
+        margin-top: 5%;
+    }
+}
