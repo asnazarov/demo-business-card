@@ -7,9 +7,9 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <!-- <link rel="stylesheet" href="css/jquery.fancybox.css"> -->
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <!-- <link rel="stylesheet" href="css/jquery.formstyler.css"> -->
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -55,7 +55,7 @@
     </div>
 
     <section class="features">
-        <h2 class="features__title">Со мной удобно работать</h2>
+        <h2 class="content-subtitle">Со мной удобно работать</h2>
         <div class="features__blocks">
             <div class="features__block features__blocks_offer">
                 <img src="./images/features/offer-img.svg" alt="">
@@ -85,7 +85,45 @@
             <div class="features__block features__blocks_conversation">
                 <img src="./images/features/conversation-img.svg" alt="">
                 <h3 class="features__subtitle">Не брошу после сдачи</h3>
-                <p class="features__text">Научу вас или вашего сотрудника пользоваться сайтом, запишу видео-инструкции.</p>
+                <p class="features__text">Научу вас или вашего сотрудника пользоваться сайтом, запишу видео-инструкции.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <h2 class="content-subtitle">Свяжитесь со мной</h2>
+        <div class="contacts__block">
+            <div class="contacts__form">
+
+            </div>
+            <div class="contacts__text">
+                <div class="contacts__data">
+                    <div class="contacts__phone">
+
+                    </div>
+                    <div class="contacts__email">
+                        <form>
+
+                            <!-- Hidden Required Fields -->
+                            <input type="hidden" name="project_name" value="Peter Fedorov">
+                            <input type="hidden" name="admin_email" value="asn.nazarov.asn@gmail.com">
+                            <input type="hidden" name="form_subject" value="footer form">
+                            <!-- END Hidden Required Fields -->
+
+                            <input type="text" name="Name" placeholder="You name..." required><br>
+                            <input type="text" name="E-mail" placeholder="You E-mail..." required><br>
+                            <input type="text" name="Phone" placeholder="You phone..."><br>
+                            <textarea name="Message" value="Message" id="" cols="30" rows="10"></textarea>
+                            <button>Send</button>
+
+                        </form>
+                    </div>
+                    <div class="contacts__social">
+
+                    </div>
+                </div>
+                <div class="social-links"></div>
             </div>
         </div>
     </section>
@@ -99,9 +137,8 @@
 
 
 
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="main.js "></script>

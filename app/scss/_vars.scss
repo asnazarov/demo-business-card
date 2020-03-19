@@ -15,3 +15,10 @@ $input: #FFBB01;
         @content;
     }
 }
+
+;
+@mixin content-subtitle {
+    max-width: 70%;
+    font: bold 2.25rem/1.17 "Roboto", sans-serif;
+    color: #fff;
+}

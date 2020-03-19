@@ -62,20 +62,6 @@
     }
 }
 
-.social-links {
-    display: flex;
-    align-items: center;
-    &__item {
-        padding-left: 20px;
-    }
-}
-
-.social-links li:hover {
-    opacity: 0.5;
-    transition: .4s;
-    ;
-}
-
 #animatedModal {
     display: none;
     width: 425px;
@@ -146,3 +132,6 @@
     padding: 7px 34px;
     // margin-left: 30px;
 }
+
+// в мазиле не получается place-h, скорее сдесь 
+//нужно шаманить, но не найду что =(
