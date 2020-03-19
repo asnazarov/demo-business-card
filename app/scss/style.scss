@@ -2,6 +2,8 @@
 @import "vars";
 @import "header";
 @import "features";
+@import "contacts";
+@import "modal";
 .main {
     background-color: $main-color;
     margin: 0;
@@ -12,11 +14,17 @@
     margin-bottom: 85px;
 }
 
+.content-elem-subtitle {
+    @include content-elem-subtitle;
+}
+
 .social-links {
     display: flex;
     align-items: center;
+    margin-top: 20px;
+    margin-left: -20px;
     &__item {
-        padding-left: 20px;
+        margin-left: 22px;
     }
 }
 

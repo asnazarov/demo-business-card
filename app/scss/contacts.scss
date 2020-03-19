@@ -1,0 +1,106 @@
+.contacts {
+    background-color: $head-footer;
+    &__content {
+        max-width: 971px;
+        margin: 0 auto;
+        padding: 50px 25px 60px 25px;
+    }
+    &__block {
+        display: flex;
+        @media screen and (max-width: 777px) {
+            display: block;
+        }
+    }
+    &__item {
+        max-width: 45%;
+        @media screen and (max-width: 777px) {
+            max-width: 450px;
+            margin: 0 auto;
+        }
+    }
+    &__form {
+        background-color: #fff;
+        max-width: 100%;
+        cursor: default;
+        padding: 45px 40px 55px;
+        box-shadow: -5px 5px 0px #ffc41d;
+        border-radius: 5px;
+    }
+    &__text {
+        padding: 16px 25px 45px 110px;
+        // border: 1px solid green;
+        width: 55%;
+        // display: flex;
+        // justify-content: space-between;
+        // flex-direction: column;
+        @media screen and (max-width: 777px) {
+            padding: 18px 0px 45px 0px;
+            display: block;
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 367px) {
+            width: 100%;
+        }
+    }
+    &__data {
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: -20px;
+        @media screen and (max-width: 367px) {
+            display: block;
+        }
+    }
+    &__phone {
+        padding-top: 15px;
+    }
+    &__email {
+        padding-top: 15px;
+    }
+    &__social {
+        padding-top: 15px;
+        width: 100%;
+    }
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @media screen and (max-width: 367px) {
+            display: block;
+        }
+    }
+    &__link {
+        font: normal 1rem/1.2 "Roboto", sans-serif;
+        color: #ffffff;
+        margin-top: 20px;
+        margin-right: 30px;
+    }
+    &__social-links {
+        margin-top: 20%;
+    }
+    &__copyright {
+        font: normal 1rem/1.2 "Roboto", sans-serif;
+        text-decoration-line: underline;
+        color: #949494;
+    }
+}
+
+.contact__social-links {
+    margin-bottom: 40%;
+}
+
+#animatedModal-footer button[type="submit"] {
+    background-color: $input;
+    text-transform: uppercase;
+    white-space: normal;
+    box-shadow: 0 5px 0px #b68500;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 15px 0 15px 0;
+    font: bold 12px/28px "Roboto", sans-serif;
+    width: 100%;
+    min-height: 70px;
+    margin-top: 20px;
+}

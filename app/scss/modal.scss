@@ -1,0 +1,75 @@
+#animatedModal {
+    display: none;
+    width: 425px;
+    cursor: default;
+    padding: 45px 40px 55px;
+    box-shadow: -5px 5px 0px #ffc41d;
+    border-radius: 5px;
+}
+
+#animatedModal button[type="submit"] {
+    background-color: $input;
+    text-transform: uppercase;
+    white-space: normal;
+    box-shadow: 0 5px 0px #b68500;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 15px 0 15px 0;
+    font: bold 12px/28px "Roboto", sans-serif;
+    width: 100%;
+    min-height: 70px;
+    margin-top: 20px;
+}
+
+.animated-modal {
+    position: relative;
+    &__paragraph {
+        font: bold 18px/28px "Roboto", sans-serif;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    &__item {
+        color: #000;
+        display: block;
+        width: 100%;
+        min-height: 70px;
+        margin-bottom: 18px;
+        outline: none;
+        height: 40px;
+        border: 1px solid #e6e6e6;
+        padding: 7px 20px;
+        background-color: #f8f8f8;
+        box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
+        border-radius: 5px;
+        font: normal 18px/28px "Roboto", sans-serif;
+        position: relative;
+    }
+    input[type="name"]::placeholder {
+        background-image: url(../images/animatedModal/user-icon.svg);
+        background-position: 2px center;
+        background-repeat: no-repeat;
+    }
+    input[type="tel"]::placeholder {
+        background-image: url(../images/animatedModal/phone-icon.svg);
+        background-position: 2px center;
+        background-repeat: no-repeat;
+    }
+    input[type="text"]::placeholder {
+        background-image: url(../images/animatedModal/time-icon.svg);
+        background-position: 2px center;
+        background-repeat: no-repeat;
+    }
+}
+
+@include placeholder {
+    color: #949494;
+    font: normal 18px/28px "Roboto", sans-serif;
+    padding: 7px 34px;
+    // margin-left: 30px;
+}
+
+// в мазиле не получается place-h, скорее сдесь 
+//нужно шаманить, но не найду что =(

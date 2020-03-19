@@ -22,3 +22,11 @@ $input: #FFBB01;
     font: bold 2.25rem/1.17 "Roboto", sans-serif;
     color: #fff;
 }
+
+@mixin content-elem-subtitle {
+    max-width: 100%;
+    word-wrap: break-word;
+    font: bold 1.5rem/1.17 "Roboto", sans-serif;
+    color: #fff;
+    margin-top: 7%;
+}

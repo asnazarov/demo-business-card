@@ -1,14 +1,20 @@
 .hero {
     background-color: $head-footer;
     min-height: 640px;
-    padding: 40px 0;
+    padding: 20px 0 40px;
     &__header {
         // border: 1px solid green;
         max-width: 976px;
         margin: 0 auto;
         padding: 0 20px;
         display: flex;
+        align-items: center;
+        flex-wrap: wrap;
         justify-content: space-between;
+    }
+    &__logo {
+        margin-right: 20px;
+        margin-top: 20px;
     }
     &__content {
         width: 100%;
@@ -19,6 +25,12 @@
         color: #fff;
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 520px) {
+            margin: 47px auto 0;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
     }
     &__text {
         color: #fff;
@@ -29,109 +41,68 @@
         margin: 18px 0 0 0;
         font: normal 1.5rem/1.17 "Roboto", sans-serif;
         color: #ffbb01;
+        @media screen and (max-width: 520px) {
+            font: normal 1rem/1.17 "Roboto", sans-serif;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
     }
     &__firstLastName {
         word-wrap: break-word;
         margin: 24px 0 20px 0;
         font: bold 50px/59px "Roboto", sans-serif;
         margin-right: 20px;
+        @media screen and (max-width: 520px) {
+            font: bold 24px/50px "Roboto", sans-serif;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
     }
     &__paragraph {
         max-width: 420px;
         margin: 0 0 40px 0;
         font: normal 16px/28px "Roboto", sans-serif;
         margin-right: 15px;
+        @media screen and (max-width: 520px) {
+            font: normal 16px/21px "Roboto", sans-serif;
+            width: 100%;
+            max-width: 84%;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
     }
     &__button {
+        display: block;
         text-align: center;
         color: #1b2944;
         background-color: $input;
         box-shadow: 0 5px 0px #b68500;
         border-radius: 5px;
         border: none;
+        text-transform: uppercase;
         padding: 15px 0 15px 0;
         font: bold 12px/30px "Roboto", sans-serif;
         width: 285px;
         max-width: 100%;
+        @media screen and (max-width: 520px) {
+            width: 80%;
+            min-height: 45px;
+            line-height: 16px;
+            letter-spacing: -1px;
+            margin: 0 auto;
+            text-align: center;
+        }
     }
     &__avatar {
         height: 41%;
         width: 41%;
         border-radius: 50%;
         border: 10px solid #fff;
+        @media screen and (max-width: 520px) {
+            margin: 0 auto 14px;
+            border: 2px solid #fff;
+        }
     }
 }
-
-#animatedModal {
-    display: none;
-    width: 425px;
-    cursor: default;
-    padding: 45px 40px 55px;
-    box-shadow: -5px 5px 0px #ffc41d;
-    border-radius: 5px;
-}
-
-#animatedModal input[type="submit"] {
-    background-color: $input;
-    box-shadow: 0 5px 0px #b68500;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    padding: 15px 0 15px 0;
-    font: bold 12px/28px "Roboto", sans-serif;
-    width: 100%;
-    min-height: 70px;
-    margin-top: 20px;
-}
-
-.animated-modal {
-    position: relative;
-    &__paragraph {
-        font: bold 18px/28px "Roboto", sans-serif;
-        text-align: center;
-        color: #000000;
-        margin-bottom: 40px;
-        position: relative;
-    }
-    &__item {
-        color: #000;
-        display: block;
-        width: 100%;
-        min-height: 70px;
-        margin-bottom: 18px;
-        outline: none;
-        height: 40px;
-        border: 1px solid #e6e6e6;
-        padding: 7px 20px;
-        background-color: #f8f8f8;
-        box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
-        border-radius: 5px;
-        font: normal 18px/28px "Roboto", sans-serif;
-        position: relative;
-    }
-    input[type="name"]::placeholder {
-        background-image: url(../images/animatedModal/user-icon.svg);
-        background-position: 2px center;
-        background-repeat: no-repeat;
-    }
-    input[type="tel"]::placeholder {
-        background-image: url(../images/animatedModal/phone-icon.svg);
-        background-position: 2px center;
-        background-repeat: no-repeat;
-    }
-    input[type="text"]::placeholder {
-        background-image: url(../images/animatedModal/time-icon.svg);
-        background-position: 2px center;
-        background-repeat: no-repeat;
-    }
-}
-
-@include placeholder {
-    color: #949494;
-    font: normal 18px/28px "Roboto", sans-serif;
-    padding: 7px 34px;
-    // margin-left: 30px;
-}
-
-// в мазиле не получается place-h, скорее сдесь 
-//нужно шаманить, но не найду что =(
