@@ -30,6 +30,10 @@
         color: #000000;
         margin-bottom: 40px;
         position: relative;
+        @media screen and (max-width: 520px) {
+            font: bold 14px/20px "Roboto", sans-serif;
+            margin-bottom: 25px;
+        }
     }
     &__item {
         color: #000;

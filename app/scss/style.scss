@@ -12,10 +12,22 @@
 .content-subtitle {
     @include content-subtitle;
     margin-bottom: 85px;
+    @media screen and (max-width: 520px) {
+        font-size: 1rem;
+        line-height: 1.1;
+        margin-bottom: 60px;
+        text-align: center;
+        letter-spacing: 2px;
+        max-width: 100%;
+    }
 }
 
 .content-elem-subtitle {
     @include content-elem-subtitle;
+    @media screen and (max-width: 520px) {
+        font-size: 1.1rem;
+        margin-top: 8%;
+    }
 }
 
 .social-links {

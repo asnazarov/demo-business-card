@@ -2,6 +2,9 @@
     background-color: $head-footer;
     min-height: 640px;
     padding: 20px 0 40px;
+    @media screen and (max-width: 520px) {
+        min-height: 550px;
+    }
     &__header {
         // border: 1px solid green;
         max-width: 976px;
