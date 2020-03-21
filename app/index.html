@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700,Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <!-- <link rel="stylesheet" href="css/jquery.fancybox.css"> -->
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
@@ -38,7 +38,7 @@
                 <h2 class="hero__profession">Фрилансер</h2>
                 <h1 class="hero__firstLastName">Петр Федоров</h1>
                 <p class="hero__paragraph">Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать дизайн и верстку небольшого сайта или интернет-магазина</p>
-                <a class="hero__button" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" href="#">Бесплатная консультация</a>
+                <a class="hero__button" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;">Бесплатная консультация</a>
             </div>
             <img class="hero__avatar" src="./images/hero/avatar.jpg" alt="">
         </div>
@@ -47,45 +47,45 @@
     <div id="animatedModal" class="animated-modal">
         <p class="animated-modal__paragraph">Можете просто оставить заявку, я позвоню вам сегодня в удобное время</p>
         <form>
-            <input id="name" class="animated-modal__item" type="name" placeholder="Ваше имя" required>
+            <input id="name" class="animated-modal__item" type="text" placeholder="Ваше имя" required>
             <input id="phone" class="animated-modal__item" type="tel" placeholder="Ваш телефон" required>
-            <input id="time" class="animated-modal__item " type="text" placeholder="Время ">
-            <button type="submit" value="Отправить">Бесплатная консультация</button>
+            <input id="time" class="animated-modal__item" type="text" placeholder="Время">
+            <button type="submit" value="Отправить ">Бесплатная консультация</button>
         </form>
     </div>
 
-    <section class="features">
-        <h2 class="content-subtitle">Со мной удобно работать</h2>
-        <div class="features__blocks">
-            <div class="features__block features__blocks_offer">
-                <img src="./images/features/offer-img.svg" alt="">
-                <h3 class="content-elem-subtitle">По договору</h3>
-                <p class="features__text">Предоставлю все документы для бухгалтерии: договоры, счета и акты. Работаю как ИП без НДС.</p>
+    <section class="features ">
+        <h2 class="content-subtitle ">Со мной удобно работать</h2>
+        <div class="features__blocks ">
+            <div class="features__block features__blocks_offer ">
+                <img src="./images/features/offer-img.svg " alt=" ">
+                <h3 class="content-elem-subtitle ">По договору</h3>
+                <p class="features__text ">Предоставлю все документы для бухгалтерии: договоры, счета и акты. Работаю как ИП без НДС.</p>
             </div>
-            <div class="features__block features__blocks_deadline">
-                <img src="./images/features/deadline-img.svg" alt="">
-                <h3 class="content-elem-subtitle">Точно в срок</h3>
-                <p class="features__text">В договоре прописана моя ответственность за срок проекта. Если просрочу — плачу неустойку. </p>
+            <div class="features__block features__blocks_deadline ">
+                <img src="./images/features/deadline-img.svg " alt=" ">
+                <h3 class="content-elem-subtitle ">Точно в срок</h3>
+                <p class="features__text ">В договоре прописана моя ответственность за срок проекта. Если просрочу — плачу неустойку. </p>
             </div>
-            <div class="features__block features__blocks_agreement">
-                <img src="./images/features/agreement-img.svg" alt="">
-                <h3 class="content-elem-subtitle">Ценник под вас</h3>
-                <p class="features__text">Если у вас нетиповой проект, сделаю рассчет цены за работу и объясню, как складывается цена.</p>
+            <div class="features__block features__blocks_agreement ">
+                <img src="./images/features/agreement-img.svg " alt=" ">
+                <h3 class="content-elem-subtitle ">Ценник под вас</h3>
+                <p class="features__text ">Если у вас нетиповой проект, сделаю рассчет цены за работу и объясню, как складывается цена.</p>
             </div>
-            <div class="features__block features__blocks_steps">
-                <img src="./images/features/steps-img.svg" alt="">
-                <h3 class="content-elem-subtitle">Промежуточные итоги</h3>
-                <p class="features__text">Показываю работу поэтапно, а не в последий момент перед крайним сроком. </p>
+            <div class="features__block features__blocks_steps ">
+                <img src="./images/features/steps-img.svg " alt=" ">
+                <h3 class="content-elem-subtitle ">Промежуточные итоги</h3>
+                <p class="features__text ">Показываю работу поэтапно, а не в последий момент перед крайним сроком. </p>
             </div>
-            <div class="features__block features__blocks_storage">
-                <img src="./images/features/storage-img.svg" alt="">
-                <h3 class="content-elem-subtitle">Хостинг и домен</h3>
-                <p class="features__text">Если мы договорились о цене проекта, в неё входит всё: домен и хостинг на год + SSL сертификат. </p>
+            <div class="features__block features__blocks_storage ">
+                <img src="./images/features/storage-img.svg " alt=" ">
+                <h3 class="content-elem-subtitle ">Хостинг и домен</h3>
+                <p class="features__text ">Если мы договорились о цене проекта, в неё входит всё: домен и хостинг на год + SSL сертификат. </p>
             </div>
-            <div class="features__block features__blocks_conversation">
-                <img src="./images/features/conversation-img.svg" alt="">
-                <h3 class="content-elem-subtitle">Не брошу после сдачи</h3>
-                <p class="features__text">Научу вас или вашего сотрудника пользоваться сайтом, запишу видео-инструкции.
+            <div class="features__block features__blocks_conversation ">
+                <img src="./images/features/conversation-img.svg " alt=" ">
+                <h3 class="content-elem-subtitle ">Не брошу после сдачи</h3>
+                <p class="features__text ">Научу вас или вашего сотрудника пользоваться сайтом, запишу видео-инструкции.
                 </p>
             </div>
         </div>
@@ -98,42 +98,42 @@
                 <!-- дом обертка contacts__item для того что бы при переполнении  __text , что бы __form не растягивался на h=100% -->
                 <div class="contacts__item">
                     <div class="contacts__form animated-modal" id="animatedModal-footer">
-                        <p class="animated-modal__paragraph">Можете просто оставить заявку, я позвоню вам сегодня в удобное время
+                        <p class="animated-modal__paragraph ">Можете просто оставить заявку, я позвоню вам сегодня в удобное время
                         </p>
                         <form>
-                            <input id="name" class="animated-modal__item" type="name" placeholder="Ваше имя" required>
+                            <input id="name" class="animated-modal__item " type="text" placeholder="Ваше имя" required>
                             <input id="phone" class="animated-modal__item" type="tel" placeholder="Ваш телефон" required>
-                            <input id="time" class="animated-modal__item " type="text" placeholder="Время ">
+                            <input id="time" class="animated-modal__item" type="text" placeholder="Время">
                             <button type="submit" value="Отправить">Бесплатная консультация</button>
                         </form>
                     </div>
                 </div>
-                <div class="contacts__text">
-                    <div class="contacts__data">
-                        <div class="contacts__phone">
-                            <p class="content-elem-subtitle">Телефон</p>
-                            <a class="contacts__link" href="tel:+7 999 123 45 67">+7 999 123 45 67</a>
+                <div class="contacts__text ">
+                    <div class="contacts__data ">
+                        <div class="contacts__phone ">
+                            <p class="content-elem-subtitle ">Телефон</p>
+                            <a class="contacts__link" href="tel:+79991234567">+7 999 123 45 67</a>
                         </div>
-                        <div class="contacts__email">
-                            <p class="content-elem-subtitle">Почта</p>
-                            <a class="contacts__link" href="">ivanov@mail.ru</a>
+                        <div class="contacts__email ">
+                            <p class="content-elem-subtitle ">Почта</p>
+                            <a class="contacts__link " href=" ">ivanov@mail.ru</a>
                             <!-- <form>
-                            <input type="hidden" name="project_name" value="Peter Fedorov">
-                            <input type="hidden" name="admin_email" value="lae51186@bcaoo.com">
-                            <input type="hidden" name="form_subject" value="footer form">
-                            <input type="text" name="Name" value="Имя " onfocus="this.value = ' ';" onblur="if (this.value == ' ') {this.value = 'Name ';}" placeholder="You name..." required><br>
-                            <input type="text" name="E-mail" value="E-mail" onfocus="this.value = ' ';" onblur="if (this.value == ' ') {this.value = 'Email ';}" placeholder="You E-mail..." required><br>
-                            <input type="text" name="Phone" value="Ваш номер"><br>
-                            <textarea name="Message" value="Message" onfocus="this.value = ' ';" onblur="if (this.value == ' ') {this.value = 'Message ';}" id="" cols="30" rows="10"></textarea>
+                            <input type="hidden " name="project_name " value="Peter Fedorov ">
+                            <input type="hidden " name="admin_email " value="lae51186@bcaoo.com ">
+                            <input type="hidden " name="form_subject " value="footer form ">
+                            <input type="text " name="Name " value="Имя " onfocus="this.value=' ' ; " onblur="if (this.value==' ' ) {this.value='Name ' ;} " placeholder="You name... " required><br>
+                            <input type="text " name="E-mail " value="E-mail " onfocus="this.value=' ' ; " onblur="if (this.value==' ' ) {this.value='Email ' ;} " placeholder="You E-mail... " required><br>
+                            <input type="text " name="Phone " value="Ваш номер "><br>
+                            <textarea name="Message " value="Message " onfocus="this.value=' ' ; " onblur="if (this.value==' ' ) {this.value='Message ' ;} " id=" " cols="30 " rows="10 "></textarea>
                             <button>Send</button>
                         </form> -->
                         </div>
-                        <div class="contacts__social">
-                            <p class="content-elem-subtitle">Соцсети</p>
-                            <ul class="contacts__links">
-                                <li><a class="contacts__link" href="#">t.me/ivanov</a></li>
-                                <li><a class="contacts__link" href="#">vk.me/ivanov</a></li>
-                                <li><a class="contacts__link" href="#">fb.me/ivanov</a></li>
+                        <div class="contacts__social ">
+                            <p class="content-elem-subtitle ">Соцсети</p>
+                            <ul class="contacts__links ">
+                                <li><a class="contacts__link " href="# ">t.me/ivanov</a></li>
+                                <li><a class="contacts__link " href="# ">vk.me/ivanov</a></li>
+                                <li><a class="contacts__link " href="# ">fb.me/ivanov</a></li>
                             </ul>
 
 
@@ -142,19 +142,19 @@
                     </div>
                     <ul class="contact__social-links social-links ">
                         <li>
-                            <a class="social-links__item" href=""><img src="./images/social-icons/github.svg" alt=""></a>
+                            <a class="social-links__item " href=" "><img src="./images/social-icons/github.svg " alt=" "></a>
                         </li>
                         <li>
-                            <a class="social-links__item" href=""><img src="./images/social-icons/twitter.svg" alt=""></a>
+                            <a class="social-links__item " href=" "><img src="./images/social-icons/twitter.svg " alt=" "></a>
                         </li>
                         <li>
-                            <a class="social-links__item" href=""><img src="./images/social-icons/instagram.svg" alt=""></a>
+                            <a class="social-links__item " href=" "><img src="./images/social-icons/instagram.svg " alt=" "></a>
                         </li>
                         <li>
-                            <a class="social-links__item" href=""><img src="./images/social-icons/facebook.svg" alt=""></a>
+                            <a class="social-links__item " href=" "><img src="./images/social-icons/facebook.svg " alt=" "></a>
                         </li>
                     </ul>
-                    <a class="contacts__copyright" href="#">Политика конфиденциальности</a>
+                    <a class="contacts__copyright " href="# ">Политика конфиденциальности</a>
                 </div>
             </div>
         </div>
@@ -170,9 +170,9 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
-    <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js "></script> -->
+    <script src="js/jquery.fancybox.min.js "></script>
+    <script src="js/jquery.maskedinput.min.js "></script>
     <script src="main.js "></script>
 </body>
 
