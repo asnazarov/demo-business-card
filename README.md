@@ -11,7 +11,7 @@ https://asnazarov.github.io/demo-business-card/app/
 * БЭМ методология;
 * jQuery;
 * Медиа-запросы (адаптивная верстка);
-* Grig;
+* Grid;
 * Flex-box верстка;
 * SCSS;
 * flat структура стилей;
